@@ -48,4 +48,9 @@ public class NomMachine {
     NomMachine that = (NomMachine) obj;
     return qualifiedName.equals(that.qualifiedName);
   }
+
+  @Override
+  public int hashCode() {
+    return qualifiedName.hashCode();
+  }
 }

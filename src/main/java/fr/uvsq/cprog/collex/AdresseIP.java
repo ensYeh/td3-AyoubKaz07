@@ -51,6 +51,11 @@ public class AdresseIP implements Comparable<AdresseIP> {
   }
 
   @Override
+  public int hashCode() {
+    return ip.hashCode();
+  }
+
+  @Override
   public int compareTo(AdresseIP other) {
     String[] thisParts = this.ip.split("\\.");
     String[] otherParts = other.ip.split("\\.");
